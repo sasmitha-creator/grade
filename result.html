@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Portal</h1>
+        <p>Welcome to Student Examination Portal</p>
+
+        <div class="login">
+            <input type="text" id="regno"
+            placeholder="Enter Register Number">
+
+            <button onclick="showResult()">
+                View Result
+            </button>
+
+            <p id="error"></p>
+        </div>
+
+        <div id="result">
+
+            <h2>Student Details</h2>
+
+            <p id="name"></p>
+            <p id="dept"></p>
+            <p id="register"></p>
+
+            <h2>Subject-wise Marks</h2>
+
+            <div id="marks"></div>
+
+            <h3 id="total"></h3>
+            <h3 id="percentage"></h3>
+
+            <button onclick="window.print()">
+                Print Result
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
